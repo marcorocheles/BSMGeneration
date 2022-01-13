@@ -1,0 +1,185 @@
+/* Estilizando a base das páginas */
+html *{
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+	padding: 0;
+}
+
+.fundo {
+	width: auto;
+	height: auto;
+
+  background: rgb(130,194,167);
+  /* background: linear-gradient(0deg, rgb(106, 160, 138) 25%, rgba(122,195,164,1) 100%); */
+	
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+}
+
+/* ___________________________________________________________________ */
+/* classes genéricas */
+
+.italico {
+  font-style: italic;
+}
+
+.center{
+  text-align: center;
+}
+
+.padding01{
+  padding: .5rem;
+}
+
+.paddingBottom{
+  padding-bottom: 2rem;
+}
+
+.negrito {
+  font-weight: bold
+}
+
+.fsTitulo{
+  font-size: 1.7rem;
+}
+
+.marginRight{
+  margin-right: 20rem;
+}
+
+/* ___________________________________________________________________ */
+
+
+/* ___________________________________________________________________ */
+/* configurando o header/cabeçalho */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(130,194,167);
+  color: #f4f4f4;
+  padding: 1rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+/* adicionando margin para os elementos li não ficarem grudados */
+header li {
+  margin-left: 1rem;
+  transition: .2s;
+}
+
+header li:hover{
+  background: transparent;
+  transition: .2s;
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.logo {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.25rem;
+}
+/* ___________________________________________________________________ */
+
+
+
+/* Estrutura genérica para todas as páginas */
+.caixa {
+
+	box-sizing: border-box;
+
+  max-width: 60%;
+  max-height: auto;
+  
+
+  /* border-radius: 2.5rem;	 */
+  background-color: rgb(245, 243, 243);
+
+	position: relative;
+  
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+	
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.img-isometrica{
+  max-width: 40%;
+  max-height: 40%;
+  width: auto;
+  height: auto;
+}
+
+.img-logo{
+  width: 12rem;
+  height: 12rem;
+}
+
+.caixa_item00{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 5rem 5rem 2rem 5rem ;
+  text-align: center;
+}
+.caixa_item01{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.caixa_item02{
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.caixa_item03{
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 1.8rem 5rem ;
+  text-align: justify;
+}
+
+.caixa_item04{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 5rem ;
+  text-align: justify;
+  flex-direction: column;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* configurando footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(130,194,167);
+  color: #f4f4f4;
+  padding: 1rem;
+}
