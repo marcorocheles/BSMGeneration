@@ -9,7 +9,8 @@ html *{
 	width: auto;
 	height: auto;
 
-  background: rgb(130,194,167);
+  background: #f0f1ef;
+  /* background: rgb(130,194,167); */
   /* background: linear-gradient(0deg, rgb(106, 160, 138) 25%, rgba(122,195,164,1) 100%); */
 	
   display: flex;
@@ -45,10 +46,33 @@ html *{
   font-size: 1.7rem;
 }
 
-.marginRight{
-  margin-right: 20rem;
+.fsSubTitulo{
+  font-size: 1.3rem;
 }
 
+.fsTexto{
+  font-size: 1rem;
+}
+
+.marginRight{
+  margin-right: 2rem;
+}
+
+.marginBottom{
+  margin-bottom: 1rem;
+}
+
+.alLeft{
+  align-items: left;
+}
+
+.branco{
+  color: #7c807d;
+}
+
+.round{
+  border-radius: 50%;
+}
 /* ___________________________________________________________________ */
 
 
@@ -93,6 +117,12 @@ header li:hover{
   color: #f4f4f4;
   font-size: 1.25rem;
 }
+
+.logo02 {
+  text-decoration: none;
+  color: rgb(130,194,167);
+  font-size: 1.6rem;
+}
 /* ___________________________________________________________________ */
 
 
@@ -107,7 +137,7 @@ header li:hover{
   
 
   /* border-radius: 2.5rem;	 */
-  background-color: rgb(245, 243, 243);
+  background-color: #f4f4f4;
 
 	position: relative;
   
@@ -128,9 +158,21 @@ header li:hover{
   height: auto;
 }
 
+.fotoMarco{
+  max-width: 34%;
+  max-height: 34%;
+  width: auto;
+  height: auto;
+}
+
 .img-logo{
-  width: 12rem;
-  height: 12rem;
+  width: 13rem;
+  height: 13rem;
+}
+
+.img-sobre{
+  width: 16.5rem;
+  height: 13rem;
 }
 
 .caixa_item00{
@@ -140,6 +182,7 @@ header li:hover{
   padding: 5rem 5rem 2rem 5rem ;
   text-align: center;
 }
+
 .caixa_item01{
   display: flex;
   align-items: center;
@@ -156,11 +199,13 @@ header li:hover{
 
 .caixa_item03{
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
   padding: 1.8rem 5rem ;
   text-align: justify;
+  background: rgba(130, 194, 167, 0.5);
 }
+
 
 .caixa_item04{
   display: flex;
@@ -171,9 +216,61 @@ header li:hover{
   flex-direction: column;
 }
 
+.caixa_item05{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 1rem 2rem 2rem 2rem ;
+  text-align: right;
+  flex-direction: column;
+}
 
+.caixa_item06{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 1rem 2rem 2rem 2rem ;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.botaoBsm{
+  text-align: center;
+  font-style: italic;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.botaoBsm:hover{
+  background: transparent;
+  transition: .2s;
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.videoSize{
+  width: 100%;
+	height: 100%;
+}
+/* .bola {
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000000;
+  background-color: #FFFF00;
+} */
 /* -------------------------------------------------------------------------- */
 /* configurando footer */
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 footer {
   display: flex;
@@ -182,4 +279,14 @@ footer {
   background: rgb(130,194,167);
   color: #f4f4f4;
   padding: 1rem;
+  flex-flow: row wrap;
+}
+
+.padding-01{
+  padding: .7rem;
+}
+
+.tm-social{
+  width: 22px;
+  height: 22px;
 }
